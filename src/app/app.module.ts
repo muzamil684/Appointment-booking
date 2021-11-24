@@ -19,6 +19,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { AppointmentListComponent } from './appointment-list/appointment-list.component';
+import { DrslistComponent } from './drslist/drslist.component';
+import { DrdetailsComponent } from './drdetails/drdetails.component';
+import { GeneralComponent } from './general/general.component';
+import { PediatricianComponent } from './pediatrician/pediatrician.component';
+import { OrthopedicComponent } from './orthopedic/orthopedic.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +33,13 @@ import { AppointmentListComponent } from './appointment-list/appointment-list.co
     HomeComponent,
     AppointmentComponent,
     AppointmentListComponent,
+    DrslistComponent,
+    DrdetailsComponent,
+    GeneralComponent,
+    PediatricianComponent,
+    OrthopedicComponent,
+    LoginComponent,
+    RegisterComponent,
     
   ],
   imports: [

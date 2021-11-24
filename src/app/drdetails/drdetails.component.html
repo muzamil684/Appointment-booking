@@ -1,0 +1,14 @@
+<div class="card h-100  shadow text-center">
+    <img src={{drObj.drImage}} class="card-img-top"  alt="...">
+    <div class="card-body">
+      <h2 class="card-title" style="color: #173e9c;">{{drObj.drTitle}}</h2>
+      <h2 class="card-text" style="color: palevioletred;">{{drObj.description}}
+      </h2>
+      <h3>Available on:</h3>
+      <h4>Weekdays : 10.00 AM to 8.00 PM</h4>
+      
+      <h4> Week-ends: 11.00 AM to 5.00 PM</h4>
+      
+      <button  class="btn add-product p-1" (click)="book()"><i class="far fa-calendar-check"></i> Book an Appoinment</button>
+    </div>
+  </div>
