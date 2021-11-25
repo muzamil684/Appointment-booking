@@ -1,4 +1,74 @@
-.container {
-    width: 90%;
-    margin: 50px auto 0 auto;
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  
+/****************************/
+
+
+
+
+li{
+  padding: 5px;
+  border-radius: 8px;
+  height: 6em;
+  width: 5.5em;
+  margin-top: -3.5em;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: transform 300ms ease;
+}
+
+
+i{
+  font-size: 2em;
+}
+
+li:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+span[id="names"]{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+span[id="HNAME"]{
+  font-size: 1.5em;
+  /* font-weight: 900; */
+  color: rgb(97, 96, 96);
+  font-family: 'Nunito', sans-serif;
+}
+span [id="p2"]{
+  color: rgb(33, 184, 221);
 }

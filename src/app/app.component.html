@@ -1,50 +1,78 @@
-<div >
+<div class="body">
+
 
   <!--  navbar -->
-<div class="body">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://clipground.com/images/hospital-logo-clipart-1.jpg" alt="" width="50px"> Sahasra Hospitals
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item" >
-            <a class="nav-link" routerLink="home" routerLinkActive="active">Home
-              <i class="fas fa-home"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " routerLink="drslist" routerLinkActive="active">Doctors
-              <i class="fas fa-user-md"></i>
-            </a>
-          </li>
-          
-          <li class="nav-item" >
-            <a class="nav-link " routerLink="login" routerLinkActive="active">Login
-              <i class="fas fa-sign-in-alt"></i>
-            </a>
-          </li>
-          
-          
-          <li class="nav-item" >
-            <a class="nav-link" routerLink="register" routerLinkActive="active">Register
-              <i class="fas fa-cash-register"></i>
-            </a>
-          </li>
-          
-          
-          
-        </ul>
-        
-      </div>
-    </div>
-  </nav>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
 
+    <button class="navbar-toggler ms-1 shadow-none"
+           type="button"
+            data-bs-toggle="collapse"
+             data-bs-target="#navbarcnt"
+              aria-controls="navbarSupportedContent"
+               aria-label="Toggle navigation "
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                 aria-expanded="false" >
+      <svg width="25" height="25" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+      
+    </button>
   
-<router-outlet></router-outlet>
+    <div class="collapse navbar-collapse" id="navbarcnt">
+      
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+          <img src="https://clipground.com/images/hospital-logo-clipart-1.jpg" alt="" width="50px"> 
+          
+          <span id="HNAME" class="">Sahasra<span id="p2">Hospitals</span></span>
+          
+        </a>
+        
+        <div class="collapse navbar-collapse " id="navbarcnt">
+          <ul class="navbar-nav  ms-auto  mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link d-flex flex-column" routerLink="home" routerLinkActive="active">
+                <span class="d-block mx-auto"><i class="fas fa-home"></i></span>
+                <span id="names" class="text-center mt-3">Home</span>
+              </a>
+            </li>
+
+            <!-- DOCTORS -->
+            <li class="nav-item ">
+              <a class="nav-link d-flex flex-column" routerLink="drslist" routerLinkActive="active">
+                <span class="d-block mx-auto"><i class="fas fa-user-md"></i></span>
+                <span id="names" class="text-center mt-3">Doctors</span>
+              </a>
+            </li>
+            
+            <!-- LOGIN -->
+            <li class="nav-item ">
+              <a class="nav-link d-flex flex-column" routerLink="login" routerLinkActive="active">
+                <span class="d-block mx-auto"><i class="fas fa-sign-in-alt"></i></span>
+                <span id="names" class="text-center mt-3">Login</span>
+              </a>
+            </li>
+            
+            <!-- REGISTER -->
+            <li class="nav-item ">
+              <a class="nav-link d-flex flex-column" routerLink="register" routerLinkActive="active">
+            <span class="d-block mx-auto"><i class="fas fa-cash-register"></i></span>
+            <span id="names" class="text-center mt-3 ">Register</span>
+              </a>
+            </li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </div> 
+  
+  
+
+  <router-outlet></router-outlet>
+  
